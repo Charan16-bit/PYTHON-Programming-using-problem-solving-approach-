@@ -685,21 +685,12 @@ print("GCD",gcd)
 a = 12
 b = 18
 
-lcm = 1
-while True:
-     if (lcm % a == 0) and (lcm % b == 0):
-          break
-     lcm += 1 
-     
-print("LCM", lcm)
-
-a = 12
-b = 18
 i = 1 
+
 while i<= a*b:
      if(i%a==0) and (i%b==0):
           lcm = i
-          print("LCM11",lcm)
+          print("LCM",lcm)
           i = a * b + 1
      else:
           i += 1

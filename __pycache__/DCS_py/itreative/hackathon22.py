@@ -343,7 +343,7 @@ largest = 0
 smallest = n
 reverse = 0
 original = n
-count = 0
+odd_count = 0
 armstrong = 0 
 i = 1
 while n > 0:
@@ -357,7 +357,7 @@ while n > 0:
      if(digit < smallest):
           smallest = digit    
      if(digit % 2 != 0):
-          count += 1
+          odd_count += 1
      
      n = n // 10
 if(reverse==original):
@@ -366,10 +366,10 @@ else:
           print("Not palidrome")
 
 while(i<=n) ^ (i<n):
-     if(n%i):
+     if(n%i==0):
          total += i
      i += 1
-if(n == 2==0 ):
+if(n == 2 ):
       print("PRIME NUMBER")
 else:
       print("Perfect number")

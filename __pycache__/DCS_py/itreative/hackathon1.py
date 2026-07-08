@@ -267,4 +267,15 @@ print(sum)
 print(average)
 print(average)
 print(product)
-
+####🛒 Q1. Supermarket Billing System ⭐
+m = 100
+n = 500
+total = 0
+numbers = 0
+while( m <= n ):
+        total = total + m
+        count = count + 1
+average = (total // count)
+print(total)
+print(count)
+print(average)
