@@ -381,10 +381,133 @@ print(reverse)
 print(count)
 print(sum)
 
-          
-          
-          
+
+#📱 Mobile Recharge Company
+
+Transaction_ID = 987654
+
+count = 0
+while Transaction_ID > 0:
+     digit = Transaction_ID % 10
+     count = count + 1
+     Transaction_ID = Transaction_ID // 10
+print("thrfhrthrt",count)        
+     
+#🏦 ATM Cash Audit
+
+Transaction_Code = 482731
+
+total = 0
+while Transaction_Code > 0:
+     digit = Transaction_Code % 10
+     total = total + digit
+     Transaction_Code = Transaction_Code // 10
+print("Digit Total = ",total)   
+
+#🛒 Supermarket Billing System
+Transaction_Code = 538
+
+total = 1
+while Transaction_Code > 0:
+     digit = Transaction_Code % 10
+     total = total * digit
+     Transaction_Code = Transaction_Code // 10
+print("Digit Total = ",total)   
      
      
-     
+#🏢 Company HR System
+Transaction_Code = 594832
+
+total = 0
+while Transaction_Code > 0:
+     digit = Transaction_Code % 10
+     if(digit > total):
+          total = digit
+     Transaction_Code = Transaction_Code // 10
+print("Digit Total = ",total)   
+
+
+#🏥 Hospital Patient ID System
+Transaction_Code = 594832
+total = Transaction_Code
+while Transaction_Code > 0:
+     digit = Transaction_Code % 10
+     if(digit < total):
+          total = digit
+     Transaction_Code = Transaction_Code // 10
+print("Digit Total = ",total)
+
+#🏆 Hackathon Q6 ⭐⭐⭐⭐⭐
+n = 864213
+reverse = 0
+while n > 0 :
+     digit = n % 10
+     reverse = reverse * 10 + digit
+     n = n // 10
+print("Encrypted Code = ",reverse)
+
+#🛂 Airport Immigration System
+
+n = 1221
+reverse = 0 ;original = n
+while n > 0 :
+     digit = n % 10
+     reverse = reverse * 10 + digit
+     n = n // 10
+
+if(reverse == original):
+     print("Verified")
+else:
+     print("Rejected")
+
+
+#🏛️ Ancient Temple Authentication
+
+n = 153
+original = n
+mat_rule = 0 
+while n > 0 :
+     digit = n % 10
+     mat_rule = mat_rule + digit ** 3
+     n = n // 10
+print(mat_rule)
+
+if(mat_rule == original):
+     print("sarced")
+else:
+     print("ordinary")
+
+#🏆 Hackathon Q9
+n = 97
+i = 1
+count = 0
+while (i <= n):
+     if(n % i ==0):
+      count += 1
+     i = i + 1
+print(count)
+
+if(count == 2):
+     print("secure ID")
+else:
+     print("In secured")
+
+
+#🏛️ National Identity Verification System
+n = 28
+i = 1
+perfect = 0
+while (i <  n):
+     if(n % i ==0):
+       perfect += i
+     i = i + 1
+print(perfect)
+
+if(perfect == n):
+     print("Verified Citizen")
+else:
+     print("Unverified Citizen")
+
+
+
           

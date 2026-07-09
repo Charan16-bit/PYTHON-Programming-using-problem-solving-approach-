@@ -691,6 +691,16 @@ while i<= a*b:
      if(i%a==0) and (i%b==0):
           lcm = i
           print("LCM",lcm)
-          i = a * b + 1
+          i  = a * b + 1
      else:
           i += 1
+#############################################
+Transaction_ID = 987654
+
+count = 0
+while Transaction_ID > 0:
+     digit = Transaction_ID % 10
+     count = count + 1
+     Transaction_ID = Transaction_ID // 10
+print("thrfhrthrt",count)        
+          
