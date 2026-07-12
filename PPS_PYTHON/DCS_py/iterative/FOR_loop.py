@@ -92,9 +92,49 @@ for i in range(digit):
 print(reverse)
 
 #🏆 Algorithm 7 – Multiplication Table (for)
-n = 10 
-mutliply = 1
+n = 7
+for i in range(1 , 11):
+    print(n, "x",i,"=",n*i)
+    
+#🏆 Algorithm 8 – Factorial using for
+n = 5
+product = 1
+for i in range (1, n + 1 ):
+    product = product * i
+print(product)
+#🚀 Next Algorithm 9 (Slightly Harder)
+num = [12,7,5,18,9,4]
+count_even = 0
+count_odd = 0
+for i in (num):
+    if (i % 2 ==0):
+        count_even += 1
+    if(i % 2!= 0):
+        count_odd +=1
+
+print(count_odd)
+print(count_even)
+
+
+#🏆 Algorithm 10 – Sum of Natural Numbers (for)
+n = 10
+total = 0
 for i in range(1,n+1):
-    if(n * i == 7):
-     mutliply = mutliply * 7
-     print("7","x",i,"=",mutliply)
+    total += i
+print(total)
+
+#🏆 Algorithm 11 – Sum of Squares
+n = 5
+sum = 0
+for i in range(1,n+1):
+    sum = sum + i ** 2
+print("",sum)
+
+#🏆 Algorithm 12 – Count Multiples of 3
+n = 20
+count = 0
+for i in range(1,n+1):
+    if(i % 3 == 0 ):
+        print("numbers are :",i)
+        count += 1;print()
+print("the count:",count)
