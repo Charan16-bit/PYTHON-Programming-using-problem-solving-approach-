@@ -138,3 +138,83 @@ for i in range(1,n+1):
         print("numbers are :",i)
         count += 1;print()
 print("the count:",count)
+
+#🏆 HackerRank Challenge #1
+n = 8
+count = 0
+for i in range(1 , n + 1):
+         count += 1
+print("Positive Number = ",count)
+
+#🏆 HackerRank Challenge #2 – Count Even Numbers
+
+n = 15
+count = 0
+for i in range(2,n+1,2):
+    count += 1
+print("Even Number :",count)
+
+
+##
+n1 = 248642
+n2 = 248641
+n1_rs = 0
+n2_re = 0
+while(n):
+    digit = n % 10
+    
+    if (n1 % 2 ==0):
+        print("Strong password")
+    else:
+        print("weak Password")
+    
+    n = n // 10
+print("/a")
+#🏆 HackerRank Challenge #1
+
+transaction_action = 131 
+
+digit_count = 0
+digit_sum = 0
+digit_product = 1
+largest_digit = 0
+smallest_digit = 9
+reverse = 0
+original = transaction_action
+prime = 0
+###condition 
+
+while(transaction_action > 0):
+    digit = transaction_action % 10
+    digit_count += 1
+    digit_sum += digit 
+    digit_product *= digit
+    reverse = reverse * 10 + digit
+    if(digit > largest_digit):
+        largest_digit = digit 
+    if (digit < smallest_digit):
+        smallest_digit = digit
+
+    transaction_action = transaction_action // 10
+if(reverse == original):
+ print("palindrome = true")
+else:
+    print("palindrome = false")
+
+for i in range (1, original+1):
+    if(original % i == 0 ):
+          prime += 1
+if(prime == 2):
+ print("Prime = True")
+else:
+ print("Prime = False")
+
+
+
+print("Digit Count43:",digit_count)
+print(digit_sum)
+print(digit_product)
+print(largest_digit)
+print(smallest_digit)
+print(reverse)
+
