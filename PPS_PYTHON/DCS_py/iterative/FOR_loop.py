@@ -218,3 +218,101 @@ print(largest_digit)
 print(smallest_digit)
 print(reverse)
 
+#Employee Bonus
+n = 50
+for i in range(1 , n + 1):
+    if(i % 4 == 0):
+        print("Employee Bonus",i)
+
+#Banking System
+
+n = 100
+sum = 0 
+for i in range ( 1 , n + 1):
+    sum = sum + i 
+print("Banking System",sum)
+
+#🏆 Problem 3 ⭐⭐⭐
+n = 200
+count = 0
+for i in range (1 , n + 1):
+    if(i % 7 == 0):
+        count = count + 1
+print("Student Portal",count)
+
+
+#Security Check
+
+n = 100
+for i in range(1,n + 1):
+    if(i % 3 == 0 ) and (i % 5==0 ):
+        print("Student Portal:",i)
+
+#ATM system
+largest = 0
+for i in range(1 ,36 ):
+    if(36 % i ==0 ):
+        largest = i
+print("largest factor",largest)
+
+#problem 6
+sum = 0
+for i in range( 1 , 101):
+    if(i % 3 ==0) or ( i % 5 == 0):
+        sum += i
+print("SUM of 1 to 100 that re divisbile by 3 or 5 ",sum)
+
+#problem 7
+n= 50
+for i in range(1 ,n+1):
+   if ( 50 % i == 0):
+       print("prime number",i)
+
+
+#🏆 Problem 8 ⭐⭐⭐⭐⭐
+perfect = 0
+count = 0 
+n = 100
+for i in range(1 , n ):
+    if(i<n):
+     if (n % i == 0 ):
+        perfect += i
+        print("",perfect)
+    
+#🏆 Problem 9 ⭐⭐⭐⭐⭐⭐
+gcd = 0 
+a = 24
+b = 36
+for i in range( 1, min(a,b)+1):
+    if(a % i == 0) and ( b % i ==0 ):
+        gcd = i
+print(gcd)
+
+#######
+lcm = 0 
+a = 24
+b = 36
+for i in range( max(a,b),a *b + 1):
+    if(i % a == 0) and ( i % b ==0 ):
+        lcm = i
+        break
+print(lcm)
+       
+
+#problem 10
+even = 0
+odd = 0
+even_sum = 0
+odd_sum = 0 
+n  = 100
+for i in range(1 , n+1 ):
+    if( i % 2 ==0 ):
+        even +=1 
+        even_sum += i
+    if(i % 3 ==0 ):
+        odd += 1
+        odd_sum+= i
+print(even,odd,even_sum,odd_sum)
+##
+for i in range( 10,0,-2):
+    print("*"*i)    
