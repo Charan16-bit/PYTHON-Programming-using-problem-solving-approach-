@@ -506,7 +506,7 @@ print(perfect)
 if(perfect == n):
      print("Verified Citizen")
 else:
-     print("Unverified Citizen")
+     print("In secured")
 
 
 
