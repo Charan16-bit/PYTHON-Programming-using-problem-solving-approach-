@@ -158,7 +158,7 @@ while(i <= 50):
          prime += 1
         j += 1            
     if(prime == 2):
-        print(i)
+        print(j)
     i+=1
 
 #🏆 Boss Challenge – Butterfly Pattern
@@ -170,7 +170,6 @@ while( i <= 4):
     while(j<=i):
         print("*",end = "")
         j +=1 
-
 #spaces for each wings
     space = 1
     while(space <= (4-i)* 2):
@@ -205,3 +204,30 @@ while(i >= 1):
         j+= 1
     print()
     i-=1 
+
+#🏆 HackerRank Challenge #14
+count = 1
+i = 1
+while(i<=5):
+    print("Department",i,":",end =" ")
+    j = 1 
+    while(j<=i ):
+        print(count,end ="  ")
+        j+=1
+        count+=1
+    print()
+    i += 1
+
+#🔥 Next HackerRank Challenge (Harder)
+
+count = 1
+i = 1
+while(i<=5):
+    print("Locker",i,":",end =" ")
+    j = 1 
+    while(j<=i ):
+        print(count,end ="  ")
+        j+=1
+        count+=2
+    print()
+    i += 1
