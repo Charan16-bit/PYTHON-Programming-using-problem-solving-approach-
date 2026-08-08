@@ -88,13 +88,13 @@ def even(num):
     if(num%2==0):
         print(num,"EVEN")
     else:
-        print("odd")
+        print(num,"odd")
 
 even(2)
 even(5)
 even(17)
 even(20)
-
+print("__________________-----")
 
 ######Print the factorial of a number using a while loop.
 def factorial(n):
@@ -104,4 +104,43 @@ def factorial(n):
         n-=1
     return result
 x = factorial(5)
-print(x+3)
+print(x)
+##############prime number 
+print("prime numbers")
+def prime (n):
+    count = 0
+    for i in range(1,n+1 ):
+        if(n%i==0):
+            count +=1 
+    if(count == 2):
+        return True
+    else:
+        return False 
+print(prime(5))
+print(prime(10))
+
+#Print the multiplication table of any number.
+def table(num):
+    for i in range(1,11):
+        print(num,"x",i,"=",num*i)
+table(5)
+
+###########
+def starts(sts):
+    i = 1
+    while(i<=sts):
+        j = 1
+        while(j <= sts):
+            print("*",end = "")
+            j+=1
+        print()
+        i+=1
+
+starts(5)
+
+
+def student(g):
+    name = "charan"
+    v = g*g
+    return name,v
+print(student(8))
