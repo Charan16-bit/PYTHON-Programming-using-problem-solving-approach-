@@ -144,3 +144,16 @@ def student(g):
     v = g*g
     return name,v
 print(student(8))
+
+print("FF")
+x = 100
+
+def outer():
+    x = 50
+
+    def inner():
+        print(x)
+
+    inner()
+
+outer()
