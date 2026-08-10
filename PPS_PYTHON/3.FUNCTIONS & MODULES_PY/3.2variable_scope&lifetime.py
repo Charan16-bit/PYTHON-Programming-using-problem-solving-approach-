@@ -90,7 +90,7 @@ def prime_range(a,b):
          print(i)
 prime_range(10,30)
 
-####
+####second_largest
 num = [10,25,8,40,15]
 def second_largest(num):
    second = num[0]
@@ -98,10 +98,23 @@ def second_largest(num):
    for n in num:
       if(n > largest):
          second = largest
-         largest = num
+         largest = n
       elif (n > second):
-         second = num
+         second = n
    return second
 
 x = second_largest(num)
-print(x)
+print("second largest Number is :",x)
+
+###COPRIME
+def coprime_num(a,b):
+  coprime = True
+
+  for i in range(2,a):
+      if(a%i==0) and (b%i==0):
+         coprime = False
+         break
+         print(i)
+  return coprime
+         
+print(coprime_num(8,15))
