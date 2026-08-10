@@ -77,7 +77,7 @@ def factorial(n):
 
 x = factorial(n)
 print(x+2)
-###
+###prime numbers
 print("--------")
 def prime_range(a,b):
    for i in range(a,b+1):
@@ -86,6 +86,22 @@ def prime_range(a,b):
          if(i%j==0):
           is_prime = False
           break
-      
+      if(is_prime):
          print(i)
 prime_range(10,30)
+
+####
+num = [10,25,8,40,15]
+def second_largest(num):
+   second = num[0]
+   largest = num[0]
+   for n in num:
+      if(n > largest):
+         second = largest
+         largest = num
+      elif (n > second):
+         second = num
+   return second
+
+x = second_largest(num)
+print(x)
