@@ -66,3 +66,26 @@ def sum(n):
     
 x = sum(n)
 print(x)
+
+#🟢 Problem 5 – Factorial 
+n = 5
+def factorial(n):
+    fact = 1
+    for i in range(n,0,-1):
+      fact = fact * i
+    return(fact)
+
+x = factorial(n)
+print(x+2)
+###
+print("--------")
+def prime_range(a,b):
+   for i in range(a,b+1):
+      is_prime = True
+      for j in range(2,i):
+         if(i%j==0):
+          is_prime = False
+          break
+      
+         print(i)
+prime_range(10,30)
