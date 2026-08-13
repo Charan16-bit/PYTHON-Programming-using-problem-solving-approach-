@@ -114,7 +114,64 @@ def coprime_num(a,b):
       if(a%i==0) and (b%i==0):
          coprime = False
          break
-         print(i)
+      print("iteration:",i)
   return coprime
          
 print(coprime_num(8,15))
+
+#🟡 Medium #4 — Strong Number
+
+n = 145
+def strong_number(n):
+   original = n
+   total = 0
+   while(n>0):
+      digit = n % 10
+
+      fact = 1
+      for i in range(digit, 0 , -1):
+         fact *= i
+
+      total += fact
+      n//=10
+   return total , total == original
+   
+
+x = strong_number(n)
+print(x)
+
+#neon number 
+n = 9 
+def neon(n):
+   original = n 
+   total = 0 
+   square = n * n
+   while( square > 0):
+      digit = square % 10 
+      total = total + digit
+      square //= 10 
+   if(original == total):
+      return(total)
+   
+x = neon(n)
+print(x)
+
+#🔴 Hard #1 — Spy Number
+n = 1124
+def spy(n):
+
+   original = n
+   sum = 0
+   product = 1
+   while (n > 0):
+      digit = n % 10 
+      sum += digit
+      product *= digit
+
+      n //= 10 
+
+   if( sum == product):
+    return(sum,product)
+
+x = spy(n)
+print(x) 
