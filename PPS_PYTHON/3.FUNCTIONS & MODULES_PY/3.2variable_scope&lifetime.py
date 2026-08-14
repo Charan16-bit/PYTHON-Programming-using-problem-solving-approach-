@@ -6,6 +6,8 @@
 
 "Local Variable"
 "Global Variable"
+
+
 ## reverse 
 n = 5678433#global avriable
 def reverse (n):  #fucntion header and parameter(n)
@@ -213,7 +215,7 @@ def circular(n):
       temp//=10
 
    for _ in range(digit):
-
+      print(n)
       is_prime = True
 
       if(n < 2 ):
@@ -226,16 +228,16 @@ def circular(n):
               break
       
       if not ( is_prime ):
-         is_circular = False
+       is_circular = False
+       break
 
-         last = n % 10
-         remaining = n // 10
-         n = last * (10**(digit-1))+remaining
+      last = n % 10
+      remaining = n // 10
+      n = last * (10**(digit-1))+remaining
 
-      print(n)
       
    return is_circular
 
-circular(n)
+
 x = circular(n)
 print(x)
