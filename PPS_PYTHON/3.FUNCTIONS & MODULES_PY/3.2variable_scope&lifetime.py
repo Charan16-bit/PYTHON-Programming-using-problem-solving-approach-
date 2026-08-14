@@ -175,3 +175,67 @@ def spy(n):
 
 x = spy(n)
 print(x) 
+
+#🔴 Hard #2 — Automorphic Number
+print("#🔴 Hard #2 — Automorphic Number")
+n = 25
+def automorphic(n):
+   original = n
+   
+   square = n * n 
+   is_automorphic = True
+   while(original>0):
+
+      if(square%10!=original%10):
+         is_automorphic= False
+         break
+
+      original//=10
+      square//=10
+      print(square,original)
+   return is_automorphic
+
+x = automorphic(n)
+
+print(x)
+#🔴 Hard #3 — Circular Prime
+
+print("Hard #3 — Circular Prime")
+n = 197
+def circular(n):
+   original = n 
+   is_circular = True 
+   checking = 0
+   temp = n
+   digit = 0 
+   while (temp>0):
+      digit += 1
+      temp//=10
+
+   for _ in range(digit):
+
+      is_prime = True
+
+      if(n < 2 ):
+         is_prime = False
+
+      else:
+         for i in range(2,n):
+           if(n%i==0):
+              is_prime = False
+              break
+      
+      if not ( is_prime ):
+         is_circular = False
+
+         last = n % 10
+         remaining = n // 10
+         n = last * (10**(digit-1))+remaining
+
+      print(n)
+      
+   return is_circular
+
+circular(n)
+x = circular(n)
+print(x)
