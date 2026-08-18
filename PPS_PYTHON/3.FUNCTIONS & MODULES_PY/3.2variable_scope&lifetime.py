@@ -233,7 +233,7 @@ def circular(n):
 
       last = n % 10
       remaining = n // 10
-      n = last * (10**(digit-1))+remaining
+      n = last * 100 +remaining
 
       
    return is_circular
