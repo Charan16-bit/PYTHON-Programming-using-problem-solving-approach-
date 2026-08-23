@@ -57,9 +57,55 @@ print(x)
 
 #Sum of even numbers
 def sum_even(n):
-    if(n == 0 ):
-        return 0 
-    return sum_even(n + 2)
+    if(n == 10 ):
+        return 10
+    
+    
+    if(n % 2==0):
+      return n + sum_even(n+2)
 
 x = sum_even(2)
+print(x)
+
+# sum of odd number
+def sum_odd(n):
+    if(n == 9):
+        return 9
+    
+    if(n % 2 != 0):
+        return n + sum_odd(n+2)
+    
+x = sum_odd(1)
+print(x)
+
+#Count digits
+print("___________")
+def count ( n):
+    if ( n == 0):
+        return 0 
+    return 1 + count ( n // 10 )
+x = count(12345)
+print(x)
+
+##
+
+def sum_count(n):
+    if(n == 0):
+        return 0
+    return  n % 10 + sum_count( n //10)
+
+x = sum_count(12345)
+print(x)
+#####
+print("__________")
+def reverse_num(n,reverse = 0):
+    if(n == 0):
+        return reverse
+    digit = n % 10
+    reverse = reverse * 10 + digit 
+    
+    return reverse_num(n // 10 , reverse)
+
+
+x = reverse_num(12345)
 print(x)
