@@ -47,30 +47,30 @@ print(x)
 
 #power
 
-def power(n):
-    if(n == 1):
-        return 0
-    return n ** 5
+def power(n,p):
+    if(p == 0):
+        return 1
+    return n * power(n,p-1)
 
-x = power(2)
+x = power(2,5)
 print(x)
 
 #Sum of even numbers
+
+print("????????")
 def sum_even(n):
-    if(n == 10 ):
-        return 10
+    if(n > 10 ):
+        return 0
     
-    
-    if(n % 2==0):
-      return n + sum_even(n+2)
+    return n + sum_even(n+2)
 
 x = sum_even(2)
 print(x)
 
 # sum of odd number
 def sum_odd(n):
-    if(n == 9):
-        return 9
+    if(n > 9):
+        return 0
     
     if(n % 2 != 0):
         return n + sum_odd(n+2)
@@ -109,3 +109,13 @@ def reverse_num(n,reverse = 0):
 
 x = reverse_num(12345)
 print(x)
+
+
+# FIBONACCI
+
+def fibo (n):
+    if n <= 1 :
+        return n 
+    return fibo(n - 1) + fibo(n - 2 )
+
+print(fibo(5))
