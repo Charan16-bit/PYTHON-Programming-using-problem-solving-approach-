@@ -29,3 +29,6 @@ def show():
     print(locals())
 
 show()
+def module_name():
+    
+reload(module_name)
