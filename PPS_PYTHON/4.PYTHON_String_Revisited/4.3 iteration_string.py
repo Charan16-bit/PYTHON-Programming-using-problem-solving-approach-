@@ -78,3 +78,31 @@ def manual_reverse(s):
 str1 = input("enter the string")
 
 print(manual_reverse(str1))
+
+
+# 6.3 Caesar Cipher
+
+def shift_words(s):
+
+  for i in range(len(s)):
+    new_str = s[i]
+    print(chr(ord(new_str)+3),end = " ")
+
+str1 = input("enter the string")
+
+(shift_words(str1))
+
+#### this code is same as above one 
+
+def shift_ch(s):
+
+  new_str = ""
+
+  for i in range(len(s)):
+
+    new_str += chr(ord(s[i])+3)
+    
+  return new_str
+
+str1 = input("the input")
+print(shift_ch(str1))
