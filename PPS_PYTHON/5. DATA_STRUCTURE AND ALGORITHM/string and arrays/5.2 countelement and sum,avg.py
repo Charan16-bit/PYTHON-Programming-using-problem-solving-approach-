@@ -21,7 +21,7 @@ def sum_avg(arr1):
 
         sum = sum + arr1[i]
 
-    avg = sum / len(arr1)-1
+    avg = sum / len(arr1)
     return sum,avg
     
 arr1 = [10,20,30,40,50]

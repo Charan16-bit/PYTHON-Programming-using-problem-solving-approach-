@@ -14,7 +14,8 @@ for i in range(n):
 
             print(arr[i], arr[j],True)
 
-####### using while loop
+####### using while loop brute force method 
+
 print("while")
 arr1 = [1, 2, 3, 4, 6, 8]
 
@@ -34,3 +35,4 @@ while left < right:
 
     else:
         right += 1
+####

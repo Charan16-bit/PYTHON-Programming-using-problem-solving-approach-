@@ -21,15 +21,3 @@ print(len(arr))
 
 
 
-arr = [12,3,23,5,59]
-
-temp = 0 
-
-for i in range(len(arr)-1):
-    if(arr[i]>arr[i+1]):
-        
-        temp = arr[i]
-    elif temp <arr[i-1]  or arr[i+1]:
-        temp = arr[i]
-        
-print(temp)
